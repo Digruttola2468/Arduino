@@ -1,6 +1,16 @@
 #include <SPI.h>
 #include <MFRC522.h>
 
+/*Conexion
+SDA(SS) -> Pin Digital 10
+SCK     -> Pin Digital 13
+MOSI    -> Pin Digital 11
+MISO    -> Pin Digital 12
+IRQ     -> -
+RST     -> Pin Digital 9
+VCC     -> 3.3v
+*/
+
 #define RST_PIN         9          // Configurable, see typical pin layout above
 #define SS_PIN          10         // Configurable, see typical pin layout above
 

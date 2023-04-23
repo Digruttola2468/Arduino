@@ -1,9 +1,20 @@
-//Incluir la libreria "RC522 by GithubCommunity"
-//Ejemplos/MFRC522/DumpInfo
-//Obtenemos la informacion de la targeta
+//Programa: Ejemplos/MFRC522/DumpInfo
 
+//Incluir la libreria  "MFRC522 by GithubCommunity"
 #include <SPI.h>
 #include <MFRC522.h>
+
+//Obtenemos la informacion de la targeta
+
+/*Conexion
+SDA(SS) -> Pin Digital 10
+SCK     -> Pin Digital 13
+MOSI    -> Pin Digital 11
+MISO    -> Pin Digital 12
+IRQ     -> -
+RST     -> Pin Digital 9
+VCC     -> 3.3v
+*/
 
 #define RST_PIN         9          // Configurable, see typical pin layout above
 #define SS_PIN          10         // Configurable, see typical pin layout above
